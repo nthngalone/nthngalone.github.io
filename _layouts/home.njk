@@ -4,13 +4,19 @@ title: NthngAlone Home
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/theme/index.css" />
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    {{ content | safe }}
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/theme/index.css" />
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>NthngAlone</h1>
+        <div class="container menu">
+          Blog Posts | Music
+        </div>
+        <div class="container main">
+          {{ content | safe }}
+        </div>
+    </body>
 </html>

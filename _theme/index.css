@@ -3,8 +3,17 @@
 @tailwind base;
 @tailwind components;
 
-.btn {
-    @apply px-4 py-2 bg-blue-600 text-white rounded;
+body {
+    @apply bg-blue-300
+}
+.container {
+    @apply rounded-lg shadow-lg w-9/12 h-full my-3 mx-auto p-3 bg-gray-100
+}
+.container.menu {
+
+}
+.container.main {
+
 }
 
 @tailwind utilities;

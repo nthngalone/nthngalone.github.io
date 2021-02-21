@@ -6,8 +6,10 @@
   "scripts": {
     "build": "rm -rf && npm run build:11ty && npm run build:css",
     "build:11ty": "eleventy",
+    "build:11ty:watch": "eleventy --watch",
     "build:css": "tailwindcss-cli build ./_theme/index.css -o ./_site/theme/index.css",
-    "serve": "npm run build && http-server ./_site"
+    "serve": "http-server ./_site",
+    "serve:dev": "./dev.sh"
   },
   "repository": {
     "type": "git",
